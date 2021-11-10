@@ -5,7 +5,7 @@ public class Main {
         Hero hero = new Hero("勇者", 10, 5);
         Enemy enemy = new Enemy("スライム", 6, 3);
 
-        System.out.printf("%s vs. %s\n", hero.setName(), enemy.setName());
+        System.out.printf("%s vs. %s\n", hero.getName(), enemy.getName());
 
         int turn = 0;
         while( hero.getDead() == false && enemy.getDead() == false ){
