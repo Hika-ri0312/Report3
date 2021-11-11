@@ -28,9 +28,13 @@ public class Hero {
         System.out.printf("%sのHPは%d。攻撃力は%dです。\n", name, maximumHP, attack);
     }
 
-    public String getName(){
-        return this.name;
+    public void setName(String name){
+         this.name = name;
     }
+
+    public String getName(){
+        return this.name; 
+   }
 
     public int getHitPoint(){
         return this.hitPoint;
