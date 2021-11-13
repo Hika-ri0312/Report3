@@ -2,10 +2,10 @@ package jp.ac.uryukyu.ie.e205217;
 
 /**
  * ヒーロークラス。
- *  String name; //敵の名前
- *  int hitPoint; //敵のHP
- *  int attack; //敵の攻撃力
- *  boolean dead; //敵の生死状態。true=死亡。
+ *  String name; //ヒーローの名前
+ *  int hitPoint; //ヒーローのHP
+ *  int attack; //ヒーローの攻撃力
+ *  boolean dead; //ヒーローの生死状態。true=死亡。
  * Created by tnal on 2016/11/13.
  */
 public class Hero {
@@ -28,18 +28,34 @@ public class Hero {
         System.out.printf("%sのHPは%d。攻撃力は%dです。\n", name, maximumHP, attack);
     }
 
+    /**
+     * 変数nameを参照・設定するためのsetter method
+     * @param name ヒーロー名
+     */
     public void setName(String name){
          this.name = name;
     }
 
+    /**
+     * 変数nameを参照・設定するためのgetter method
+     * @return name 
+     */
     public String getName(){
         return this.name; 
    }
 
+    /**
+     * 変数hitPointを参照・設定するためのgetter method
+     * @return hitPoint
+     */
     public int getHitPoint(){
         return this.hitPoint;
     }
 
+    /**
+     * 変数nameを参照・設定するためのgetter method
+     * @return dead
+     */
     public boolean getDead(){
         return this.dead;
     }
