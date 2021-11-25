@@ -11,8 +11,7 @@ package jp.ac.uryukyu.ie.e205217;
 public class Hero extends LivingThing{
     
     public Hero (String name, int maximumHP, int attack) {
-        super(name, maximumHP, attack);
-        
+        super(name, maximumHP, attack);   
     }
 
     public int getHitPoint(){
